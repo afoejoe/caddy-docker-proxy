@@ -1,7 +1,7 @@
-version: "3.7"
+version: "3.0"
 services:
   caddy:
-    container_name: caddy-docker-proxy
+    container_name: ghcr.io/afoejoe/caddy-docker-proxy:latest
     image: lucaslorentz/caddy-docker-proxy:2.8-alpine
     ports:
       - 80:80
