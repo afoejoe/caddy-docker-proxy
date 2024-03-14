@@ -68,5 +68,5 @@ jobs:
           script: |
             echo $APPTOKEN | docker login ghcr.io -u $USERNAME --password-stdin
             cd ~/.deploy/${{ github.event.repository.name }}
-            sudo docker compose -f ./docker-compose.yml pull
-            sudo docker compose -f ./docker-compose.yml up caddy -d
+            docker compose -f ./docker-compose.yml pull
+            docker compose -f ./docker-compose.yml up caddy -d
