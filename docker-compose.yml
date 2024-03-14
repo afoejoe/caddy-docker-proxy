@@ -2,9 +2,7 @@ version: "3.0"
 services:
   caddy:
     container_name: caddy-docker-proxy
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: lucaslorentz/caddy-docker-proxy:2.8-alpine
     ports:
       - 80:80
       - 443:443
